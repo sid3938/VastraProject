@@ -5,7 +5,7 @@ import UserPage from "./pages/UserPage.jsx";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/VastraProject">
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />

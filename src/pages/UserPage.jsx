@@ -39,7 +39,9 @@ function UserPage() {
           <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
+            <th scope="col">username</th>
             <th scope="col">Phone</th>
+            <th scope="col">email</th>
             <th scope="col">Website</th>
           </tr>
         </thead>
@@ -48,7 +50,9 @@ function UserPage() {
             <tr key={user.id}>
               <th scope="row">{index + 1}</th>
               <td>{user.name}</td>
+              <td>{user.username}</td>
               <td>{user.phone}</td>
+              <td>{user.email}</td>
               <td>
                 <a
                   href={`http://${user.website}`}
